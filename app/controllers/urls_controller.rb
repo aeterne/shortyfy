@@ -16,7 +16,7 @@ class UrlsController < ApplicationController
 	def new
 		@url = Url.new
 
-		letters = [('a'..'z'),('A'..'Z')].map { |l| l.to_a }.flatter
+		letters = [('a'..'z'),('A'..'Z')].map { |l| l.to_a }.flatten
 		@url.random_id = (0..8).map { letters[rand(letters.length)] }.join
 		
 	end
