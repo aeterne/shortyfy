@@ -1,71 +1,67 @@
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h1>Shortyfy urls</h1>
+<h1>Shortyfyed urls</h1>
 <% @urls.each do |url| %>
-<p>
-	<%= link_to url.random_id, url_path(:id => url.random_id) %> => <%= url.original %>
-</p>
+
+<table class="table table-stripped">
+	<thead>
+		<tr>
+			<th>Shortened URL</th>
+			<th>Original URL</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<%= link_to url.random_id, url_path(:id => url.random_id) %>
+			</td>
+			<td>
+				<%= url.original %>
+			</td>
+		</tr>
+	</tbody>
+	
+</table>
+
 <% end %>
 
-<%= link_to "Shortyfy another url", new_url_path %>
+<%= link_to "Shortyfy another url", new_url_path, class: "btn  btn-success" %>
 
 
-<div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+<div class="row">
+	<div class="col-md-4">
+		<h2>Info here</h2>
+		<p>
+			Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+		</p>
+		<p>
+			<a class="btn btn-default" role="button" href="#">
+			View details »
 
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
+			</a>
+		</p>
+	</div>
+	<div class="col-md-4">
+		<h2>Info here</h2>
+		<p>
+			Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+		</p>
+		<p>
+			<a class="btn btn-default" role="button" href="#">
+			View details »
 
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+			</a>
+		</p>
+	</div>
+	<div class="col-md-4">
+		<h2>Info here</h2>
+		<p>
+			Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+		</p>
+		<p>
+			<a class="btn btn-default" role="button" href="#">
+			View details »
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-      </div>
+			</a>
+		</p>
+	</div>
+</div>
