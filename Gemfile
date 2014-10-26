@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.beta2'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.0.beta1'
 # Use Uglifier as compressor for JavaScript assets
@@ -36,6 +36,7 @@ gem 'pg', group: :production
 
 group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
+  gem 'sqlite3'
   gem 'byebug'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
