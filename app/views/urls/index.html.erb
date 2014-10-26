@@ -1,0 +1,8 @@
+<h1>Shortyfy urls</h1>
+<% @urls.each do |url| %>
+<p>
+	<%= link_to url.random_id, url_path(:id => url_random_id) %> => <% url.original %>
+</p>
+<% end %>
+
+<%= link_to "Shortyfy another url", new_url_path %>
