@@ -1,0 +1,3 @@
+== Very basic url shortener
+
+This is a basic project created while learning Ruby on Rails.
