@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 # Ruby version declared for heroku
 ruby '2.1.2'
+# 12 factor gem
+gem 'rails_12factor', group: :production
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.beta2'
 # Use sqlite3 as the database for Active Record
